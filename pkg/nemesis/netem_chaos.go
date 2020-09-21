@@ -84,7 +84,7 @@ func (d delay) template(ns string, pods []string, podMode chaosv1alpha1.PodMode,
 }
 
 func (d delay) defaultTemplate(ns string, pods []string) chaosv1alpha1.NetworkChaosSpec {
-	return d.template(ns, pods, chaosv1alpha1.OnePodMode, "100ms", "25", "10ms")
+	return d.template(ns, pods, chaosv1alpha1.OnePodMode, "150ms", "25", "20ms")
 }
 
 type duplicate struct {
